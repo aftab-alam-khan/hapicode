@@ -1,0 +1,25 @@
+
+GET http://localhost:8000/tasks
+
+###
+GET http://localhost:8000/tasks/6169ea391540340036a4f656
+
+###
+Post http://localhost:8000/tasks
+Content-Type: application/json
+
+{
+    "text": "hello raj test"
+}
+###
+
+PATCH http://localhost:8000/tasks/616c623c5066d184d4961a48
+Content-Type: application/json
+
+{
+    "text": "Hello  Raj changed"
+}
+
+###
+
+DELETE http://localhost:8000/tasks/616c631a9763a0ee311dc2d2
